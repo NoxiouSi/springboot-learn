@@ -11,4 +11,8 @@ public class HelloController {
         return "Hello world!";
     }
 
+    @RequestMapping("/zeroException")
+    public int zeroException(){
+        return 100/0;
+    }
 }
